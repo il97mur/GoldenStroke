@@ -1,0 +1,701 @@
+@import vars
+@import fonts
+@import libs
+
+
+
+// Основные стили заголовков
+
+html, body
+	box-sizing: border-box
+
+button
+	border: none
+	outline: none
+	padding: 0
+	&:focus
+		outline: none
+
+input
+	border: none
+	outline: none
+	padding: 0
+	&:focus
+		outline: none
+
+.button
+	width: fit-content
+	text-transform: uppercase
+
+.main-text
+	font-size: 20px
+	line-height: 27px
+	&_bold
+		font-weight: bold
+
+p
+	margin: 0
+
+a
+	&:hover
+		text-decoration: none
+
+body
+	font-family: "Open Sans", sans-serif
+	box-sizing: border-box
+	font-size: 16px
+	line-height: 22px
+
+.h1
+	font-family: 'Playfair Display', sans-serif
+	font-weight: bold
+	font-size: 36px
+	line-height: 48px
+	&_center
+		text-align: center
+	&_gold
+		color: $gold
+
+.h2
+	font-family: 'Open Sans', sans-serif
+	font-weight: normal
+	font-size: 20px
+	line-height: 27px
+
+.h3
+	font-family: 'Open Sans', sans-serif
+	font-weight: normal
+	font-size: 16px
+	line-height: 22px
+
+.container
+	width: 1140px
+	display: flex
+	flex-wrap: wrap
+
+.row
+	width: 100%
+
+.header
+	padding: 0 150px
+	background-color: $black
+	height: 80px
+	position: fixed
+	width: 100%
+	display: flex
+	align-items: center
+	color: #ffffff
+	z-index: 1000
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__menus
+		display: flex
+	&__ui-wrap
+		display: flex
+	&__category
+		margin-right: 40px
+		&:last-of-type
+			margin-right: 0
+	&__language-select
+		margin-right: 45px
+	&__search-img
+		margin-right: 20px
+	&__search
+		margin-right: 40px
+	&__login-or-reg
+		margin-right: 40px
+	&__cart-icon
+		margin-right: 15px
+
+.category
+	font-size: 20px
+	line-height: 27px
+	color: #ffffff
+	display: flex
+	align-items: center
+	cursor: pointer
+	&__arrow-down
+		margin-left: 15px
+		transform: translateY(50%)
+
+.arrow-down
+	background-image: url('../img/_src/arrow-down_white.svg')
+	background-repeat: no-repeat
+	background-size: contain
+	width: 10px
+	height: 6px
+
+.language-select
+	font-size: 16px
+	line-height: 22px
+	display: flex
+	align-items: center
+	cursor: pointer
+	&__arrow-fill
+		margin-left: 5px
+
+.arrow-fill
+	width: 10px
+	height: 6px
+	background-image: url('../img/_src/arrow-fill.svg')
+	background-repeat: no-repeat
+	background-size: contain
+
+.search
+	display: flex
+
+.search-img
+	background-image: url('../img/_src/search-icon.svg')
+	width: 24px
+	height: 24px
+	background-size: contain
+	background-repeat: no-repeat
+
+.login-or-reg
+	display: flex
+
+.separator
+	margin: 0 20px
+
+.link
+	color: #ffffff
+	text-decoration: none
+	transition: all .3s ease
+	display: flex
+	width: fit-content
+	&:hover
+		text-decoration: underline
+		color: rgba(#fff, .8)
+	
+.cart
+	display: flex
+
+.cart-icon
+	background-image: url('../img/_src/cart-icon.svg')
+	width: 26px
+	height: 26px
+	background-repeat: no-repeat
+	background-size: contain
+
+.c-main-slider
+	position: relative
+
+.main-slider
+	// height: 100vh
+	width: 100%
+	padding-top: 35px
+	position: relative
+	&__item
+		width: 100%
+	&__img
+		width: 100%
+	.owl-dots
+		transform: rotate(90deg) translate(0px, -50%)
+		position: absolute
+		top: 50%
+		left: 390px
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: 48px
+		background-color: $gold
+
+.welcome
+	padding: 75px 70px 120px
+	background-color: $black
+	border-radius: 20px
+	position: absolute
+	bottom: -120px
+	right: 390px
+	width: 820px
+	z-index: 50
+	&__hello
+		font-family: 'Playfair Display'
+		font-size: 72px
+		line-height: 96px
+		margin-bottom: 75px
+		color: #fff
+
+.button
+	padding: 10px 28px
+	border-radius: 50px
+	font-size: 20px
+	line-height: 27px
+	&_gold
+		color: #fff
+		background-color: $gold
+	&_white
+		background-color: #fff
+		border-color: $gold
+		color: $gold
+		border: 1px solid $gold
+
+.input
+	padding: 10px 28px
+	border-radius: 50px
+	font-size: 20px
+	line-height: 27px
+	background-color: #fff
+
+.new-arrivals
+	padding-top: 220px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	padding-bottom: 100px
+	background-color: $light-gray
+	&__h1
+		margin-bottom: 50px
+		flex-basis: 100%
+
+.picture
+	display: flex
+	flex-direction: column
+	&:hover
+		color: $dark-gray
+		text-decoration: none
+	&__img-part
+		border: 5px solid $black
+		position: relative
+		margin-bottom: 30px
+		overflow: hidden
+		// width: 100%
+	&__img
+		max-height: 100%
+		transition: all .3s ease
+	&__buttons-row
+		margin: 15px 15px
+		position: absolute
+		top: 0
+		right: 0
+		display: flex
+		justify-content: flex-end
+	&__button
+		width: 32px
+		height: 32px
+		border-radius: 1000px
+		background-color: $black
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-left: 10px
+		z-index: 10
+		position: relative
+	&__fav
+		background-image: url('../img/_src/fav_gold.svg')
+		background-repeat: no-repeat
+		background-size: contain
+		width: 22px
+		height: 19px
+	&__cart
+		background-image: url('../img/_src/cart_gold.svg')
+		background-repeat: no-repeat
+		background-size: contain
+		width: 22px
+		height: 19px
+	&__tag
+		padding: 5px 20px
+		background-color: $gold
+		position: absolute
+		bottom: 0
+		left: 0
+		border-radius: 0 20px 0 0
+		text-transform: uppercase
+		color: #fff
+	&__text-part
+		display: flex
+		flex-wrap: wrap
+		text-decoration: none
+		color: $dark-gray
+	&__author
+		font-size: 20px
+		line-height: 27px
+		color: $dark-gray
+		width: 100%
+
+.pictures-slider
+	&__next-prev
+		width: 10px 
+	&__next
+		transform: rotate(180deg)
+	>.owl-nav
+		position: absolute 
+		width: 1140px
+		display: flex
+		justify-content: space-between
+		top: 50%
+		left: 390px
+		transform: translateY(-50%)
+
+.pictures-slider .owl-nav button.owl-prev, button.owl-next,
+	background-color: $black !important
+	border-radius: 100px !important
+	width: 55px
+	height: 55px
+
+.promo-categories
+	display: flex
+	justify-content: center
+	position: relative
+	&__background
+		content: ''
+		display: block
+		border-style: solid
+		border-top-color: $light-gray
+		border-right-color: transparent
+		width: 0
+		height: 0
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+	&__container
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+	&__h1
+		width: 456px
+	&__button
+		margin-top: 40px
+		margin-bottom: 100px
+
+.pic-categories
+	display: flex
+	justify-content: space-between
+	padding-bottom: 100px
+	&__column
+		display: flex
+		flex-direction: column
+		&:nth-child(2)
+			margin-top: -100px
+		&:nth-child(3)
+			margin-top: -280px
+	&__item
+		width: 350px
+		height: 350px
+		position: relative
+		overflow: hidden
+		outline: 5px solid $black
+		margin-top: 45px
+		&:first-child
+			margin-top: 0
+		&:hover
+			.pic-categories__img
+				transform: scale(1.2)
+		// box-shadow: 5px 5px 0px $black inset
+	&__img
+		transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1)
+	&__text-part
+		padding: 20px
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		background-image: url('../img/_src/black-stroke.png')
+		background-position: left bottom
+		background-repeat: no-repeat
+	&__name
+		margin-top: 55px
+		color: #ffffff
+	&__watch
+		color: $gold
+		display: flex
+		justify-content: space-between
+
+.arrow-right-gold
+	background-image: url('../img/_src/arrow-right-gold.svg')
+	background-repeat: no-repeat
+	background-size: contain
+	width: 66px
+	height: 16px
+
+.pic-by-price
+	display: flex
+	justify-content: center
+	padding-bottom: 100px
+	position: relative
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+	&__h1
+		margin-bottom: 50px
+		width: 100%
+	&__items-row
+		height: 530px
+		display: flex
+		justify-content: space-between
+	&__item
+		flex-basis: 22%
+		height: 520px
+		box-sizing: border-box
+		border: 5px solid $dark
+		overflow: hidden
+		position: relative
+		&:hover
+			.pic-by-price__img
+				transform: scale(1.2)
+	&__img
+		height: 100%
+		width: 100%
+		transition: 0.3s all ease
+	&__text-part
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		background-image: url('../img/_src/black-stroke.png')
+		background-repeat: no-repeat
+		background-size: 100%
+		background-position: right bottom
+		padding-top: 40px
+		padding-bottom: 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__price
+		font-size: 12px
+		line-height: 16px
+		color: $gold
+		font-weight: bold
+		margin-bottom: 15px
+	&__price-count
+		font-size: 18px
+		line-height: 24px
+	&__valute
+		text-transform: uppercase
+	&__arrow
+		background-image: url('../img/_src/long-arrow-right.svg')
+		background-repeat: no-repeat
+		background-size: 100%
+		width: 66px
+		height: 16px
+
+.pic-by-category
+	display: flex
+	flex-direction: column
+	width: 100%
+	padding-bottom: 100px
+	&__row
+		display: flex
+		background-repeat: no-repeat
+		background-size: 100% 100%
+		justify-content: center
+		&:nth-child(odd) .container
+			justify-content: flex-end
+		&:nth-child(even) .container
+			justify-content: flex-start
+		&:nth-child(1)
+			background-image: url('../img/_src/portraits.jpg')
+		&:nth-child(2)
+			background-image: url('../img/_src/nature.jpg')
+		&:nth-child(3)
+			background-image: url('../img/_src/live.jpg')
+		&:nth-child(4)
+			background-image: url('../img/_src/all-cats.jpg')
+	&__container
+		display: flex
+	&__text-part
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background-color: #ffffff
+		padding: 115px 35px
+		&_gold
+			background-color: $gold
+			.h1
+				color: #ffffff
+			.button
+				border-color: $black
+				color: $black
+				background-color: transparent
+	&__h1
+		margin-bottom: 20px
+
+.bg-circle
+	background-color: $light-gray
+	border-radius: 10000px
+	width: 2060px
+	height: 2060px
+	z-index: -1
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+
+.new-authors
+	display: flex
+	justify-content: center
+	padding-bottom: 100px
+	position: relative
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	&__row
+		display: flex
+		justify-content: space-between
+	&__h1
+		margin-bottom: 50px
+	&__author
+		flex-basis: 22%
+	&__button
+		margin-top: 40px
+		margin-left: auto
+		margin-right: auto
+	&__bg-circle
+		position: absolute
+		bottom: 170px
+		left: 50%
+		transform: translateX(-50%)
+		background-color: $light-gray
+		width: 2060px
+		height: 2060px
+		border-radius: 10000px
+		z-index: -1
+
+.new-authors-author
+	border-radius: 20px
+	overflow: hidden
+	position: relative
+	color: #ffffff
+	&__text-part
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		background-image: url('../img/_src/black-stroke.png')
+		background-repeat: no-repeat
+		background-size: 100% 100%
+		background-position: left top
+		padding: 20px
+		padding-top: 60px
+		display: flex
+		flex-wrap: wrap
+	&__main-text
+		margin-bottom: 10px
+		margin-right: auto
+	&__info-row
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__arrow
+		background-image: url('../img/_src/arrow-right-gold.svg')
+		background-repeat: no-repeat
+		background-size: 100%
+		width: 66px
+		height: 16px
+
+.sub-footer
+	display: flex
+	justify-content: center
+	width: 100%
+	margin-top: 120px
+	height: 500px
+	background-image: url('../img/_src/sub-footer-bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: right top
+	&__container
+		display: flex
+		justify-content: flex-start
+	&__card
+		border-radius: 20px
+		background-color: $black
+		padding: 70px 65px 30px 60px
+		margin-top: -100px
+		width: 660px
+		height: fit-content
+	&__h1
+		color: #ffffff
+		margin-bottom: 20px
+	&__main-text
+		margin-bottom: 40px
+		color: #ffffff
+
+.footer
+	background-color: $black
+	height: 500px
+	display: flex
+	justify-content: center
+	align-items: center
+	&__container
+		display: flex
+		justify-content: flex-start
+		height: fit-content
+	&__main-text
+		margin-bottom: 40px
+		width: 340px
+		color: #ffffff
+	&__inputs-row
+		display: flex
+	&__input
+		margin-right: 20px
+
+// СТРАНИЦА КАТАЛОГА
+
+.search-filter
+	display: flex
+	justify-content: center
+	background-color: $light-gray
+	padding-top: 160px
+	&__container
+		display: flex
+		flex-wrap: wrap
+	&__h1
+		margin-bottom: 40px
+	&__filter-row
+		display: flex
+		justify-content: space-between
+		margin-bottom: 60px
+	&__input
+		width: 100%
+		border: 1px solid $gray
+		cursor: pointer
+	&__label
+		position: relative
+		flex-basis: 23.5%
+	&__arrow
+		position: absolute
+		right: 20px
+		top: 50%
+		transform: translateY(-50%)
+		background-image: url('../img/_src/arrow-down_dark.svg')
+		background-repeat: no-repeat
+		background-size: 100%
+		width: 10px
+		height: 6px
+		&_rotate
+			transform: rotate(-180deg)
+
+.pic-masonry
+	display: flex
+	justify-content: center
+	&__container
+		display: flex
+		flex-wrap: wrap
+	&__item
+		width: 30%
+		margin-bottom: 50px
+		> .picture__img-part > img
+			width: 100%
+		&:hover .picture__img
+			transform: scale(1.2)
+
+.pic-masonry-picture
+	&__type
+		margin-bottom: 10px
+	&__info-row
+		display: flex
+		justify-content: space-between
+
+.percent-size
+	width: 30%
+
+.masonry-gutter
+	width: 5%

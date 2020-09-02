@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catalog</title>
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+    <header class="header">
+		<div class="header__row row">
+			<a href="#" class="logo header__logo">
+				<img src="img/_src/logo.png" alt="" class="logo__img">
+			</a>
+			<div class="header-menus header__menus">
+				<div class="header__category category">Каталог <div class="arrow-down category__arrow-down"></div></div>
+				<div class="header__category category">Авторы <div class="arrow-down category__arrow-down"></div></div>
+				<div class="header__category category">О галерее <div class="arrow-down category__arrow-down"></div></div>
+			</div>
+			<div class="header__ui-wrap ui">
+				<div class="language-select header__language-select">RU <div class="arrow-fill language-select__arrow-fill"></div></div>
+				<div class="search header__search">
+					<div class="search-img header__search-img"></div>
+					Поиск
+				</div>
+				<div class="login-or-reg header__login-or-reg">
+					<a href="#" class="link login">Вход</a>
+					<span class="separator">|</span>
+					<a href="#" class="link reg">Регистрация</a>
+				</div>
+				<div class="cart header__cart">
+					<div class="cart-icon header__cart-icon"></div>
+					<span class="cart__count">0</span>
+				</div>
+			</div>
+		</div>
+    </header>
+    
+    <section class="search-filter">
+        <div class="container search-filter__container">
+            <h1 class="row h1 h1_gold h1_center search-filter__h1 h1_center">Мой поиск</h1>
+            <div class="row search-filter__filter-row">
+                <label class="search-filter__label">
+                    <input readonly value="Живопись" type="text" class="input input_select search-filter__input">
+                    <div class="search-filter__arrow"></div>
+                </label>
+                <label class="search-filter__label">
+                    <input readonly value="Жанр картины" type="text" class="input input_select search-filter__input">
+                    <div class="search-filter__arrow"></div>
+                </label>
+                <label class="search-filter__label">
+                    <input readonly value="Стиль картины" type="text" class="input input_select search-filter__input">
+                    <div class="search-filter__arrow"></div>
+                </label>
+                <label class="search-filter__label">
+                    <input readonly value="Техника рисования" type="text" class="input input_select search-filter__input">
+                    <div class="search-filter__arrow"></div>
+                </label>
+            </div>
+            <div class="row search-filter__filter-row">
+                <label class="search-filter__label">
+                    <input type="range">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section class="pic-masonry">
+        <div class="container pic-masonry__container">
+
+			<div class="percent-size"></div>
+			<div class="masonry-gutter"></div>
+
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<a class="pic-masonry__item picture" href="#">
+				<div class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="row picture__buttons-row">
+						<button class="picture__button">
+							<div class="picture__fav"></div>
+						</button>
+						<button class="picture__button">
+							<div class="picture__cart"></div>
+						</button>
+					</div>
+					<div class="picture__tag">new</div>
+				</div>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</a>
+			<div class="pic-masonry__item picture" href="#">
+				<div class="row picture__buttons-row">
+					<button class="picture__button">
+						<div class="picture__fav"></div>
+					</button>
+					<button class="picture__button">
+						<div class="picture__cart"></div>
+					</button>
+				</div>
+				<a href="#" class="picture__img-part">
+					<img src="img/_src/picture_1.jpg" alt="" class="picture__img">
+					<div class="picture__tag">new</div>
+				</a>
+				<div class="picture__text-part">
+					<div class="main-text pic-masonry-picture__name main-text_bold">Драгоценное время вфлвфы</div>
+					<div class="h3 pic-masonry-picture__type">Живопись, 70x70см</div>
+
+					<div class="row pic-masonry-picture__info-row">
+						<div>
+							<div class="main-text main-text_bold pic-masonry-picture__author">Rami Meir</div>
+							<div class="h3 pic-masonry-picture__country">Израиль</div>
+						</div>
+						<div class="main-text pic-masonry-picture__price">1 000 000р.</div>
+					</div>
+				</div>
+
+			</div>
+
+        </div>
+    </section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script>
+		$('.picture__img').each(function(index){
+			$(this).attr('src', 'img/_src/catalog_' + (index + 1) +'.jpg' )
+		});
+	</script>
+</body>
+</html>
